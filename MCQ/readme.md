@@ -1,11 +1,10 @@
 ## MCQ-1
 
-public class Main{
 public static void main(String[] args) {
 String str = "guvi";
 System.out.println(str.toUpperCase());
 }
-}
+
 
 ## MCQ-2
 
