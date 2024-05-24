@@ -6,7 +6,7 @@ public static void main(String[] args) {
 }
 ```
 
----
+
 
 ## MCQ-2
 ```java
@@ -20,7 +20,7 @@ public class Main {
 }
 ```
 
----
+
 
 ## MCQ-3
 ```java
@@ -34,7 +34,7 @@ public class Main {
 }
 ```
 
----
+
 
 ## MCQ-4
 ```java
@@ -48,7 +48,7 @@ public class Main {
 }
 ```
 
----
+
 
 ## MCQ-5
 ```java
@@ -62,7 +62,7 @@ public static void main(String[] args) {
 }
 ```
 
----
+
 
 ## MCQ-6
 ```java
@@ -76,7 +76,7 @@ public static void main(String[] args) {
 }
 ```
 
----
+
 
 ## MCQ-7
 ```java
@@ -88,7 +88,7 @@ public static void main(String[] args) {
 }
 ```
 
----
+
 
 ## MCQ-8
 ```java
@@ -102,7 +102,7 @@ public static void main(String[] args) {
 }
 ```
 
----
+
 
 ## MCQ-9
 ```java
@@ -113,8 +113,6 @@ public static void main(String[] args) {
 
 }
 ```
-
----
 
 ## MCQ-10
 ```java
