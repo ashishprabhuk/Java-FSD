@@ -107,8 +107,10 @@ public static void main(String[] args) {
 ## MCQ-9
 ```java
 public static void main(String[] args) {
-    int a = 5;
-    System.out.println(a++ + ++a - ++a - a--);
+    int a = 5;                
+    System.out.println(a++ + ++a - ++a - a--); // Output: -4
+    // 5 (from a++) + 7 (from ++a) - 8 (from ++a) - 8 (from a--)
+
 }
 ```
 
