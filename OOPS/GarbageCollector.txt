@@ -1,0 +1,26 @@
+$ Garbage collector (GC):
+- It is the process by which java programs performs automatic memory management.
+- when Java programs wens on the JVM, objects are created on the heap, 
+    which is a portion of memory dedicated to the program.
+- Eventually, some objects will no longer be needed. 
+    The garbage collector finds these unused objects and deletes them to free up memory.
+
+$ How garbage collector works in java?
+- It looks heap memory, identifying which objects are in use 
+    and which are not and deleting the unused objects.
+- An in-use object, or referenced object means that some past of our program
+     still maintains a pointer to that object.
+- An unused or unreferenced obj is no longer referenced by any part of the program. 
+    So the memory used by an unreferenced object can be reclaimed.
+
+$ Finalization:
+- Just before destroying an object, garbage Collector
+    calls finalize() method on the object to perform cleanup activities
+- once finalize method completes, Garbage collector destroys that object.
+
+→ finalize prototype:
+    protected void finalize() throws Throwable
+
+$ Note:
+- finalize() method is called by Garbage collector, not JVM.
+- finalize() method is never invoked more than once for any object.

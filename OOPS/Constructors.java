@@ -69,20 +69,20 @@ class Construct{
 
 
 /*
-$Constructors
+$ Constructors:
     @ A constructor in Java is a special method that is used to initialize objects. 
-    The constructor is called when a object of a class is created.
-    A constructor will have the same name as the class they belong to.
-    They don't have a return type (not even void ~ automatically called)
+    @ The constructor is called when a object of a class is created.
+    @ A constructor will have the same name as the class they belong to.
+    @ They don't have a return type (not even void ~ automatically called)
 
-$Constructor Overloading
+$ Constructor Overloading:
     @It allows to have multiple constructors in the same class with different parameters list.
 
-$this
+$ this:
     @ It is a reference to the current instance of a class, 
     and its used to access instance variables  and methods within that class.
 
-$Note: 
+$ Note:
     @ Constructor Calling must be the 1st element of the constructor
         Constructors(int age){
             this.age = age;
