@@ -19,7 +19,7 @@ $ Finalization:
 - once finalize method completes, Garbage collector destroys that object.
 
 → finalize prototype:
-    protected void finalize() throws Throwable
+~    protected void finalize() throws Throwable
 
 $ Note:
 - finalize() method is called by Garbage collector, not JVM.
