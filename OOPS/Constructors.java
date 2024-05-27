@@ -67,7 +67,6 @@ class Construct{
     }
 }
 
-
 /*
 $ Constructors:
     @ A constructor in Java is a special method that is used to initialize objects. 

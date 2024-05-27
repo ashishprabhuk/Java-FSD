@@ -23,7 +23,7 @@ public class Inheritance {
 
 
 /*
-$Inheritance:
+$ Inheritance:
     @ Inheritance is a fundamental concept in object-oriented programming (OOP). 
         It allows a class (subclass or derived class) 
         to inherit properties and behaviors (fields and methods) 
@@ -35,15 +35,14 @@ $ Superclasses and Subclasses:
         The subclass inherits all the non-private fields and methods of the superclass.
         But cannot access private members of the superclass directly in the subclass.
 
-$Types of Inheritance:
+$ Types of Inheritance:
     @ Single Inheritance: A class inherits from one superclass.
     @ Multilevel Inheritance: A class is derived from a class which is also derived from another class.
     @ Hierarchical Inheritance: Multiple classes inherit from one superclass.
-    @ Hybrid Inheritance: A combination of two or more types of inheritance. 
+    @ Multiple/Hybrid Inheritance: A combination of two or more types of inheritance. 
         However, Java does not support multiple inheritance 
         (a class cannot inherit from more than one class directly) 
         to avoid complexity and ambiguity. 
         This can be achieved using interfaces.
 
-$ Super Keyword:
 */
