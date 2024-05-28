@@ -1,65 +1,64 @@
 package OOPS;
 
-class Person {
-    // Private fields
-    private String name;
-    private int age;
+// Define a class named BankAccount
+class BankAccount {
+    // Private instance variables (attributes)
+    private String accountNumber; // Encapsulated account number
+    private double balance;       // Encapsulated balance
 
-    // Constructor
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    // Public getter for name
-    public String getName() {
-        return name;
-    }
-
-    // Public setter for name
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    // Public getter for age
-    public int getAge() {
-        return age;
-    }
-
-    // Public setter for age with validation
-    public void setAge(int age) {
-        if(age > 0) {
-            this.age = age;
+    // Constructor to initialize the BankAccount object
+    public BankAccount(String accountNumber, double initialBalance) {
+        this.accountNumber = accountNumber; // Set the account number
+        if (initialBalance >= 0) {
+            this.balance = initialBalance;
         } else {
-            System.out.println("Age must be positive.");
+            System.out.println("Initial balance cannot be negative.");
         }
     }
 
-    // Method to display person details
-    public void displayPerson() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
+    // Public getter method to retrieve the account number
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    // Public getter method to retrieve the balance
+    public double getBalance() {
+        return balance;
+    }
+
+    // Public method to deposit money into the account
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount; // Add the amount to the balance
+            System.out.println("Deposited: " + amount);
+        } else {
+            System.out.println("Invalid deposit amount.");
+        }
+    }
+
+    // Public method to withdraw money from the account
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount; // Subtract the amount from the balance
+            System.out.println("Withdrawn: " + amount);
+        } else {
+            System.out.println("Invalid withdrawal amount or insufficient balance.");
+        }
     }
 }
 
 public class Encapsulation {
     public static void main(String[] args) {
-        // Creating an instance of Person
-        Person person = new Person("John Doe", 25);
-        
-        // Accessing and modifying the data using getters and setters
-        System.out.println("Initial State:");
-        person.displayPerson();
+        BankAccount account = new BankAccount("12345", 1000);
 
-        // Modifying data
-        person.setName("Jane Doe");
-        person.setAge(30);
+        System.out.println("Account Number: " + account.getAccountNumber());
+        System.out.println("Initial Balance: " + account.getBalance());
 
-        System.out.println("Modified State:");
-        person.displayPerson();
+        account.deposit(500.0);
+        System.out.println("New Balance after Deposit: " + account.getBalance());
 
-        // Attempting to set an invalid age
-        person.setAge(-5); // This will not change the age and will print an error message
+        account.withdraw(200.0);
+        System.out.println("New Balance after Withdrawal: " + account.getBalance());
     }
 }
 
